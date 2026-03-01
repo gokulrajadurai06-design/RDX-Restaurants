@@ -3,64 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Annachi Tea Kadai</title>
+    <title>RDX Restaurant</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Annachi Tea Kadai</h1>
+        <div class="logo">
+            <h1>RDX</h1>
+            <p>Restaurant</p>
+        </div>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="home">
-        <h2>Welcome to Annachi Tea Kadai</h2>
-        <p>Experience the finest teas in town.</p>
-        <img src="https://via.placeholder.com/600x300?text=Annachi+Tea+Shop" alt="Annachi Tea Shop" style="max-width: 100%; height: auto;">
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Luxury Hotel Dining Experience</h2>
+            <p>Indulge in the finest cuisine crafted with passion and elegance in our luxurious hotel setting.</p>
+            <a href="#contact" class="btn">Reserve a Table</a>
+        </div>
     </section>
+    <style>
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
 
     <section id="about">
-        <h2>About Us</h2>
-        <img src="https://via.placeholder.com/600x300?text=Tea+Preparation" alt="Tea Preparation" style="max-width: 100%; height: auto;">
-        <p>Annachi Tea Kadai is a traditional tea shop offering a wide variety of teas and snacks.</p>
+        <div class="container">
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Luxury Hotel Restaurant Interior">
+                </div>
+                <div class="about-text">
+                    <h2>About RDX Restaurant</h2>
+                    <p>RDX Restaurant is a culinary haven where luxury meets tradition. Our chefs curate an unforgettable dining experience with the finest ingredients and impeccable service.</p>
+                    <p>Established in 2010, we have been a beacon of gastronomic excellence, blending modern techniques with timeless flavors.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="menu">
-        <h2>Our Menu</h2>
-        <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem;">
-            <div style="text-align: center;">
-                <img src="https://via.placeholder.com/200x150?text=Masala+Chai" alt="Masala Chai" style="border-radius: 8px;">
-                <h3>Masala Chai</h3>
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Starter">
+                    <h3>Starter</h3>
+                    <p>Delicate appetizers to awaken your palate.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Main Course">
+                    <h3>Main Course</h3>
+                    <p>Exquisite dishes prepared with precision.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Dessert">
+                    <h3>Dessert</h3>
+                    <p>Decadent sweets to conclude your meal.</p>
+                </div>
             </div>
-            <div style="text-align: center;">
-                <img src="https://via.placeholder.com/200x150?text=Ginger+Tea" alt="Ginger Tea" style="border-radius: 8px;">
-                <h3>Ginger Tea</h3>
-            </div>
-            <div style="text-align: center;">
-                <img src="https://via.placeholder.com/200x150?text=Green+Tea" alt="Green Tea" style="border-radius: 8px;">
-                <h3>Green Tea</h3>
-            </div>
-            <div style="text-align: center;">
-                <img src="https://via.placeholder.com/200x150?text=Black+Tea" alt="Black Tea" style="border-radius: 8px;">
-                <h3>Black Tea</h3>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Luxury Dish 1">
+                <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Luxury Dish 2">
+                <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Luxury Dish 3">
+                <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Luxury Dish 4">
+                <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Luxury Dish 5">
+                <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Luxury Dish 6">
             </div>
         </div>
     </section>
 
     <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: contact@annachiteakadai.com</p>
-        <p>Phone: +1234567890</p>
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="tel" placeholder="Your Phone" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2023 Annachi Tea Kadai. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2023 RDX Restaurant. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
